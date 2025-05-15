@@ -1,0 +1,371 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Personal Website">
+    <meta name="author" content="Devon Hwang">
+    <title>Bootstrap Responsive Design</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dokdo&family=Imperial+Script&family=Jost:ital,wght@0,100..900;1,100..900&family=Lacquer&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Prata&family=Racing+Sans+One&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&family=Rock+Salt&family=Slackside+One&display=swap" rel="stylesheet">
+    
+    <!-- LOAD BOOTSTRAP CSS - DO NOT DELETE -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- END LOADING BOOTSTRAP CSS -->
+
+    <!-- Custom styles -->
+    <link href="style.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" crossorigin="anonymous" referrerpolicy="no-referrer">
+
+  </head>
+
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#">Devon's Website</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#hero">Home</a>
+            </li>
+
+            <!-- Dropdown menu -->
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                data-bs-toggle="dropdown" aria-expanded="false">
+                Pages
+              </a>
+              <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#skills">My Skills</a></li>
+                <li><a class="dropdown-item" href="#work">My Work</a></li>
+                <li><a class="dropdown-item" href="#about">About</a></li>
+                <li><a class="dropdown-item" href="#contact">Contact</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+      <section class="hero d-flex align-items-center text-center">
+        <div class="container position-relative hero-text">
+
+          <!-- Arch decorative element behind text -->
+          <div class="arch position-absolute top-50 start-50 translate-middle"></div>
+
+          <!-- Hero Content -->
+          <div class="position-relative z-2">
+            <div class="hero-name mb-3">
+              <h1 class="display-3 fw-bold text-white" style="font-family: 'Rock Salt', cursive;">
+                Devon Hwang
+              </h1>
+            </div>
+
+            <div class="hero-description mb-4">
+              <p class="lead text-white tight-text" style="font-family: 'Jost', sans-serif;">
+                Interactive design student at James Madison University with a focus on UI/UX, user research, and digital product development.
+              </p>
+            </div>
+
+            <div class="hero-button">
+              <a href="#skills" class="scroll-arrow btn btn-outline-light rounded-circle">
+                <i class="bi bi-chevron-down"></i>
+              </a>
+            </div>
+
+        </div>
+      </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="py-5 text-white">
+      <div class="container">
+        <h2 class="text-center fw-bold mb-5" style="font-family: 'Rock Salt', cursive;">My Skills</h2>
+        <div class="row g-4 justify-content-center">
+
+          <!-- Skill Card Template -->
+          <div class="col-md-4 d-flex">
+            <div class="card text-center shadow p-4 w-100 h-100">
+              <img src="images/id.png" alt="Adobe InDesign" class="mx-auto mb-3" style="height: 80px;">
+              <h5 class="skill-subheading" style="font-family: 'Rock Salt', cursive;">Adobe InDesign</h5>
+              <p class="lead tight-text" style="font-family: 'Jost', sans-serif;">Used for layout design and typographic precision in portfolio spreads, resumes, and content-heavy print or digital documents.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex">
+            <div class="card text-center shadow p-4 w-100 h-100">
+              <img src="images/ai.png" alt="Adobe Illustrator" class="mx-auto mb-3" style="height: 80px;">
+              <h5 class="skill-subheading" style="font-family: 'Rock Salt', cursive;">Adobe Illustrator</h5>
+              <p class="lead tight-text" style="font-family: 'Jost', sans-serif;">Great for creating vector-based logos, icons, and interface illustrations that support clean, scalable design elements.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex">
+            <div class="card text-center shadow p-4 w-100 h-100">
+              <img src="images/ps.png" alt="Adobe Photoshop" class="mx-auto mb-3" style="height: 80px;">
+              <h5 class="skill-subheading" style="font-family: 'Rock Salt', cursive;">Adobe Photoshop</h5>
+              <p class="lead tight-text" style="font-family: 'Jost', sans-serif;">Helps enhance and manipulate images for web use, mockups, and hero sections — ideal for creative visual storytelling.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex">
+            <div class="card text-center shadow p-4 w-100 h-100">
+              <img src="images/vsc.png" alt="Visual Studio Code" class="mx-auto mb-3" style="height: 60px;">
+              <h5 class="skill-subheading" style="font-family: 'Rock Salt', cursive;">Visual Studio Code</h5>
+              <p class="lead tight-text" style="font-family: 'Jost', sans-serif;">My go-to code editor for building responsive websites using HTML, CSS, JavaScript, and Bootstrap with live previews and extensions.</p>
+            </div>
+          </div>
+
+          <div class="col-md-4 d-flex">
+            <div class="card text-center shadow p-4 w-100 h-100">
+              <img src="images/figma.png" alt="Figma" class="mx-auto mb-3" style="height: 60px;">
+              <h5 class="skill-subheading" style="font-family: 'Rock Salt', cursive;">Figma</h5>
+              <p class="lead tight-text" style="font-family: 'Jost', sans-serif;">Used to prototype interactive app designs and collaborate on wireframes, UI components, and user flow planning.</p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Work Section -->
+    <section id="work" class="py-5" style="background-color: rgba(97, 111, 123, 0.8);">
+
+      <div class="container">
+        <h2 class="text-center mb-4 text-white" style="font-family: 'Rock Salt', cursive;">My Work</h2>
+        <p class="text-center text-white fs-5 mb-5 mx-auto" style="max-width: 700px; font-family: 'Jost', sans-serif;">
+          Here are some examples of my current and previous work.
+        </p>
+
+        <div id="workCarousel" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+
+            <!-- Slide 1 -->
+            <div class="carousel-item active">
+              <div class="row g-3 justify-content-center">
+                <div class="col-4 col-md-3 text-center">
+                  <img src="images/logo.png" class="bg-white d-block w-100 rounded shadow mb-2" alt="Prototype Screen 1">
+                  
+                  <p class="text-white" style="font-family: 'Jost', sans-serif; font-size: 0.95rem;">
+                    An all-in-one workout app where I worked with a team to conduct user research and high fidelity prototyping
+                  </p>
+                  
+                  <a href="https://devhwang01.github.io/#" target="_blank" rel="noopener noreferrer" 
+                    class="btn btn-outline-light btn-sm" style="font-family: 'Jost', sans-serif;">
+                    View Project
+                  </a>
+                </div>
+
+
+                <div class="col-4 col-md-3">
+                  <img src="images/teamwork.png" class="bg-white d-block w-100 rounded shadow" alt="Prototype Screen 2"
+                  data-bs-toggle="modal" data-bs-target="#imageModal"
+                  onclick="document.getElementById('modalImage').src=this.src">
+                  <p class="text-white text-center" style="font-family: 'Jost', sans-serif; font-size: 0.95rem;">A graphic I made for Keister Elementary School students using their own personal art work on Adobe software</p>
+
+                </div>
+                <div class="col-4 col-md-3 text-center">
+                  <img src="images/sds.png" class="bg-white d-block w-100 rounded shadow mb-2" alt="Prototype Screen 3">
+                  
+                  <p class="text-white" style="font-family: 'Jost', sans-serif; font-size: 0.95rem;">
+                    A smaller project with p5.js — coded a shirt design studio to create your own personal shirt design.
+                  </p>
+                  
+                  <a href="https://editor.p5js.org/devhwang01/full/Aq1RdhmeC" target="_blank" rel="noopener noreferrer"
+                    class="btn btn-outline-light btn-sm" style="font-family: 'Jost', sans-serif;">
+                    Try it Live
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel-item">
+              <div class="row g-3 justify-content-center">
+                <div class="col-4 col-md-3">
+                  <img src="images/sb2.png" class="bg-white d-block w-100 rounded shadow" alt="Prototype Screen 4"
+                  data-bs-toggle="modal" data-bs-target="#imageModal"
+                  onclick="document.getElementById('modalImage').src=this.src">
+                  <p class="text-white text-center" style="font-family: 'Jost', sans-serif; font-size: 0.95rem;">A low-fidelity prototype application I conducted user research on called "StudyBuddy"</p>
+
+                </div>
+                <div class="col-4 col-md-3">
+                  <img src="images/fitness-discover.png" class="bg-white d-block w-100 rounded shadow" alt="Prototype Screen 5"
+                  data-bs-toggle="modal" data-bs-target="#imageModal"
+                  onclick="document.getElementById('modalImage').src=this.src">
+                  <p class="text-center text-white" style="font-family: 'Jost', sans-serif; font-size: 0.95rem;">A preview of LivFit's high fidelity prototype, created on Figma</p>
+
+                </div>
+              </div>
+            </div>
+
+        <!-- Controls -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#workCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#workCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
+
+      <!-- About Section -->
+      <section id="about" class="py-5" style="background-color: rgba(158, 144, 132, 0.5);">
+        <div class="container">
+
+          <!-- Breadcrumb -->
+          <nav aria-label="breadcrumb">
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item"><a href="#" style="color: #fff;">Home</a></li>
+              <li class="breadcrumb-item active text-white" aria-current="page">About</li>
+            </ol>
+          </nav>
+
+          <!-- Section Title -->
+          <h2 class="text-center mb-4 text-white" style="font-family: 'Rock Salt', cursive;">
+            About Me
+          </h2>
+
+          <!-- Intro Paragraph -->
+          <p class="text-center text-white mx-auto mb-5 fs-5" style="max-width: 1200px; font-family: 'Jost', sans-serif;">
+            I'm Devon Hwang, an interactive design student at James Madison University passionate about crafting user-centered visual experiences. My work blends creative tools like Adobe InDesign, Illustrator, and Photoshop with technical skills in HTML/CSS, prototyping, and research. I grew up in Florida with a love for the beach, and I currently live in Ashburn, Virginia. I enjoy spending my free time with my family and friends, enjoying the outdoors, and going to the gym. I am always looking for new opportunities to learn and grow in the field of design.
+          </p>
+
+          <!-- Two-Column Layout -->
+          <div class="row align-items-center">
+            
+            <!-- Image -->
+            <div class="col-md-6 mb-4 mb-md-0 text-center">
+              <img src="images/rock.jpg" alt="About Devon" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Supporting Text -->
+            <div class="col-md-6 text-white" style="font-family: 'Jost', sans-serif;">
+              <h4 class="mb-3" style="font-weight: 500;">Design with Purpose</h4>
+              <p>
+                My design philosophy focuses on clarity, empathy, and usability. Whether I'm designing with Adobe tools or developing with HTML/CSS, I aim to create digital experiences that support real users and solve real problems.
+              </p>
+              <p>
+                From user research to high-fidelity prototypes, I enjoy working through the entire creative process to make projects that feel polished and purposeful. Collaboration, iteration, and thoughtful design are at the core of my work.
+              </p>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+        <!-- Contact Section -->
+          <section id="contact" class="py-5" style="background-color: rgba(97, 111, 123, 0.8);">
+            <div class="container">
+
+              <!-- Breadcrumb (top-left) -->
+              <nav aria-label="breadcrumb" class="mb-3">
+                <ol class="breadcrumb">
+                  <li class="breadcrumb-item"><a href="#" style="color: #ffffff;">Home</a></li>
+                  <li class="breadcrumb-item active text-white" aria-current="page">Contact</li>
+                </ol>
+              </nav>
+
+              <!-- Heading -->
+              <h2 class="text-center mb-4 text-white" style="font-family: 'Rock Salt', cursive;">
+                Contact Me
+              </h2>
+
+              <!-- Intro Text -->
+              <p class="text-center text-white fs-5 mb-5" style="font-family: 'Jost', sans-serif;">
+                I'm always open to new ideas, collaborations, or just a good conversation. Feel free to reach out using any method below.
+              </p>
+
+              <!-- Contact Cards -->
+              <div class="row justify-content-center g-4">
+
+                <!-- Email -->
+                <div class="col-md-3 d-flex">
+                  <div class="card h-100 shadow text-center p-4 w-100 contact-card">
+                    <h5 class="mb-3" style="font-family: 'Rock Salt', cursive;"><i class="fa-solid fa-envelope me-2"></i>Email</h5>
+                    <a href="mailto:devhwang01@gmail.com" class="btn btn-outline-dark btn-sm w-100" style="font-family: 'Jost', sans-serif;">
+                      devhwang01@gmail.com
+                    </a>
+                  </div>
+                </div>
+
+                <!-- Phone -->
+                <div class="col-md-3 d-flex">
+                  <div class="card h-100 shadow text-center p-4 w-100 contact-card">
+                    <h5 class="mb-3" style="font-family: 'Rock Salt', cursive;"><i class="fa-solid fa-phone me-2"></i>Phone</h5>
+                    <a href="tel:5715282573" class="btn btn-outline-dark btn-sm w-100" style="font-family: 'Jost', sans-serif;">
+                      571-528-2573
+                    </a>
+                  </div>
+                </div>
+
+                <!-- LinkedIn -->
+                <div class="col-md-3 d-flex">
+                  <div class="card h-100 shadow text-center p-4 w-100 contact-card">
+                    <h5 class="mb-3" style="font-family: 'Rock Salt', cursive;"><i class="fa-brands fa-linkedin me-2"></i>LinkedIn</h5>
+                    <a href="https://www.linkedin.com/in/devon-hwang-33b7612a3" target="_blank" class="btn btn-outline-dark btn-sm w-100" style="font-family: 'Jost', sans-serif;">
+                      View My Profile
+                    </a>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+
+
+
+
+
+
+    <!-- Footer -->
+    <footer class="text-center py-4">
+      <div class="container">
+        <p class="mb-0 text-white small">
+          &copy; 2025 Devon hwang. All rights reserved. Created by Devon Hwang.
+        </p>
+      </div>
+    </footer>
+
+
+
+
+
+
+      <!-- Image Modal -->
+        <div class="modal fade" id="imageModal" tabindex="-1" aria-hidden="true">
+          <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content bg-white border-0 shadow">
+              <div class="modal-body p-0">
+                <img src="" id="modalImage" class="img-fluid w-100 rounded" alt="Enlarged preview">
+              </div>
+            </div>
+          </div>
+        </div>
+        <script>
+          function showModalImage(src) {
+            document.getElementById('modalImage').src = src;
+          }
+        </script>
+
+    <!-- LOAD BOOTSTRAP JAVASCRIPT - DO NOT DELETE -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- END LOADING BOOTSTRAP JAVASCRIPT -->
+
+  </body>
+</html>
+
+
